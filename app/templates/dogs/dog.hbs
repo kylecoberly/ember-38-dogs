@@ -1,0 +1,8 @@
+<p>I'm a dog, and my name is {{model.name}}!</p>
+{{#if model.toys}}
+  <h3>Toys</h3>
+  {{#each model.toys as |toy|}}
+    <p>{{toy.category}}{{#if toy.isSqueaky}}- It Squeaks!{{/if}}</p>
+  {{/each}}
+{{/if}}
+

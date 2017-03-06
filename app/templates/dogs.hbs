@@ -1,0 +1,7 @@
+<h2>Dogs</h2>
+<ul>
+  {{#each model as |dog|}}
+    <li>{{#link-to "dogs.dog" dog}}{{dog.name}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+{{outlet}}
